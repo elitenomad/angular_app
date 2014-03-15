@@ -1,4 +1,7 @@
+require 'sinatra'
+require 'sinatra/reloader' if development?
 require 'json'
+
 
 class App < Sinatra::Base
   set :root, File.join(File.dirname(__FILE__), "..")
